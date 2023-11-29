@@ -95,7 +95,7 @@ document.getElementById('rural-deserts').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -160,7 +160,7 @@ document.getElementById('black-mh-needs').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
     parent.querySelector('#articleCardCaption').style.display = "block";
 
 if (myArticle.about_one.length < 4) {
@@ -224,7 +224,7 @@ document.getElementById('transgender').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -289,7 +289,7 @@ document.getElementById('hotline').addEventListener('click', function() {
     
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -352,7 +352,7 @@ document.getElementById('esa').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -416,7 +416,7 @@ document.getElementById('commissioners').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -480,7 +480,7 @@ document.getElementById('art-therapy').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -545,7 +545,7 @@ document.getElementById('lgbtq').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -609,7 +609,7 @@ document.getElementById('listicle').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     parent.querySelector('#articleCardCaption').style.display = "block";
 

@@ -89,7 +89,7 @@ document.getElementById('first-gen').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -123,7 +123,7 @@ document.getElementById('loneliness').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
    
 
     myModal.show();
@@ -156,7 +156,7 @@ document.getElementById('skinny').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -190,7 +190,7 @@ document.getElementById('photojournalism').addEventListener('click', function() 
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -224,7 +224,7 @@ document.getElementById('anxiety').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -258,7 +258,7 @@ document.getElementById('gun-violence').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -292,7 +292,7 @@ document.getElementById('ai').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -326,7 +326,7 @@ document.getElementById('better-place').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -360,7 +360,7 @@ document.getElementById('weight-loss').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -394,7 +394,7 @@ document.getElementById('bullying').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -428,7 +428,7 @@ document.getElementById('mh-journalists').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 
@@ -462,7 +462,7 @@ document.getElementById('mourning').addEventListener('click', function() {
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
-parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     
 

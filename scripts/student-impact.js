@@ -98,7 +98,7 @@ document.getElementById('mh-uf-resources').addEventListener('click', function() 
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -172,7 +172,7 @@ document.getElementById('acps').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -241,7 +241,7 @@ document.getElementById('sf-mhe').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -314,7 +314,7 @@ document.getElementById('psychology-mhe').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -386,7 +386,7 @@ document.getElementById('perception').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
     parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -460,7 +460,7 @@ document.getElementById('baking-club').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -529,7 +529,7 @@ document.getElementById('basketball').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -602,7 +602,7 @@ document.getElementById('baseball').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 
@@ -675,7 +675,7 @@ document.getElementById('volleyball').addEventListener('click', function() {
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
     parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 parent.querySelector('#articleCardCaption').style.display = "block";
 

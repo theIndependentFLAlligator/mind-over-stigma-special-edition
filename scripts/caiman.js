@@ -93,7 +93,7 @@
         parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
         parent.querySelector('#articleBody').innerHTML = myArticle.body;
         parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
 
         if (myArticle.author_two.length > 4) {
@@ -157,7 +157,7 @@ if (myArticle.about_one.length < 4) {
         parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
         parent.querySelector('#articleBody').innerHTML = myArticle.body;
         parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
         if (myArticle.author_two.length > 4) {
         parent.querySelector('#articleAbout').innerHTML += '<br><br>' + myArticle.about_two;
@@ -220,7 +220,7 @@ if (myArticle.about_one.length < 4) {
         parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
         parent.querySelector('#articleBody').innerHTML = myArticle.body;
         parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
         if (myArticle.author_two.length > 4) {
         parent.querySelector('#articleAbout').innerHTML += '<br><br>' + myArticle.about_two;
@@ -281,7 +281,7 @@ if (myArticle.about_one.length < 4) {
         parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
         parent.querySelector('#articleBody').innerHTML = myArticle.body;
         parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
         if (myArticle.author_two.length > 4) {
         parent.querySelector('#articleAbout').innerHTML += '<br><br>' + myArticle.about_two;
@@ -342,7 +342,7 @@ if (myArticle.about_one.length < 4) {
         parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
         parent.querySelector('#articleBody').innerHTML = myArticle.body;
         parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
         if (myArticle.author_two.length > 4) {
         parent.querySelector('#articleAbout').innerHTML += '<br><br>' + myArticle.about_two;
@@ -404,7 +404,7 @@ if (myArticle.about_one.length < 4) {
         parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
         parent.querySelector('#articleBody').innerHTML = myArticle.body;
         parent.querySelector('#articleAbout').innerText = myArticle.about_one;
-        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
+        parent.querySelector('#copy-link-input').setAttribute('value', window.location.href);
 
         if (myArticle.author_two.length > 4) {
         parent.querySelector('#articleAbout').innerHTML += '<br><br>' + myArticle.about_two;
