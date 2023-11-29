@@ -80,6 +80,8 @@ document.getElementById('first-gen').addEventListener('click', function() {
         desc: "<p>You aren’t a stranger to being the first to try something, and I promise you, mental health support is more than worth it</p>",
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -112,6 +114,8 @@ document.getElementById('loneliness').addEventListener('click', function() {
         desc: "The environment that stigmatizes mental health issues is the same toxic environment that prevents us from seeing loneliness as the mental health issue it is."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -120,8 +124,7 @@ document.getElementById('loneliness').addEventListener('click', function() {
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
     parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
 parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
-
-    
+   
 
     myModal.show();
 }, false);
@@ -144,6 +147,8 @@ document.getElementById('skinny').addEventListener('click', function() {
         desc: "College is a time to find who you are. That’s a big task to shoulder with an empty stomach."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -176,6 +181,8 @@ document.getElementById('photojournalism').addEventListener('click', function() 
         desc: "At times, I’ve become the thing I despise most in this profession — a desensitized journalist."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -208,6 +215,8 @@ document.getElementById('anxiety').addEventListener('click', function() {
         desc: "My chest is hurting, my stomach is turning and my eyes are getting teary. The woman sitting by the window looks at me concerned. Although I’m embarrassed by my reaction, I can’t help it."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -240,6 +249,8 @@ document.getElementById('gun-violence').addEventListener('click', function() {
         desc: "In the case of mass shootings, it’s a shared cycle of trauma that comes with too many newsrooms trusted to work in the delicate balance of their stories."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -272,6 +283,8 @@ document.getElementById('ai').addEventListener('click', function() {
         desc: "These are things I can’t do with an AI that has the same meaning. But it doesn’t hurt to have a little support from your friendly artificial intelligence."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -304,6 +317,8 @@ document.getElementById('better-place').addEventListener('click', function() {
         desc: "Within the first month of me starting college I cried almost everyday. I would wake up, go to class, study at the library then go back to my dorm. I felt like a robot."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -336,6 +351,8 @@ document.getElementById('weight-loss').addEventListener('click', function() {
         desc: "I empathize with you. I see you. And I hope you see a bit of yourself in me."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -368,6 +385,8 @@ document.getElementById('bullying').addEventListener('click', function() {
         desc: " A “victim mentality” is not the counter-productive mindset that it is often branded as."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -400,6 +419,8 @@ document.getElementById('mh-journalists').addEventListener('click', function() {
         desc: " In being able to address this reality that journalists are prone to mental health issues because of their increased exposure to trauma, and other factors, society can begin to destigmatize the idea of mental health and be more aware of the effects that it has. "
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
@@ -432,6 +453,8 @@ document.getElementById('mourning').addEventListener('click', function() {
         desc: " Furiously writhing, as it clogs and congeals into an incomprehensible, semi-solid mass of misery at the back of my throat. I yawn; it grows. It’s expansive. It feeds itself."
     };
 
+    history.pushState({}, '', '#' + myArticle.slug);
+    
     const parent = document.querySelector("#articleContainer");
 
     parent.querySelector('#articleBody').innerHTML = myArticle.body;
