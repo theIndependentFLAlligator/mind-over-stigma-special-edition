@@ -1,12 +1,63 @@
-window.addEventListener("load", (event) => {
-    if (window.location.hash) {
-        try {
-            document.querySelector(window.location.hash).click();
-        } catch (error) {
-            console.log(error);
+(function() {
+
+    window.addEventListener("load", (event) => {
+        if (window.location.hash) {
+            try {
+                document.querySelector(window.location.hash).click();
+            } catch (error) {
+                console.log(error);
+            }
         }
-    }
-});
+    });
+
+    // Event listener for modal open
+    document.getElementById('articleContainer').addEventListener('show.bs.modal', function() {
+        scroll.stop();
+    });
+
+    // Event listener for modal close
+    document.getElementById('articleContainer').addEventListener('hidden.bs.modal', function() {
+        scroll.start();
+    });
+
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        repeat: true,
+    });
+
+    const handleScroll = () => {
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach((card) => {
+            if (card.classList.contains('is-inview')) {
+                card.classList.add('in-view');
+            } else {
+                card.classList.remove('in-view');
+            }
+        });
+    };
+
+    // Listen for Locomotive Scroll's scroll event
+    scroll.on('scroll', handleScroll);
+
+    // Trigger handleScroll on initial load
+    handleScroll();
+
+    document.getElementById('copy-link-btn').addEventListener('click', function() {
+
+        const copyLink = document.getElementById("copy-link-input");
+        copyLink.select();
+        copyLink.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyLink.value);
+    
+        document.getElementById("copy-link-notif").style.display = 'block';
+    
+        setTimeout(() => {
+            document.getElementById("copy-link-notif").style.display = 'none';
+          }, "3000");
+    
+    }, false);
 
 // Article card click events
 const myModal = new bootstrap.Modal(document.getElementById("articleContainer"), {});
@@ -35,9 +86,10 @@ document.getElementById('first-gen').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -66,9 +118,10 @@ document.getElementById('loneliness').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -97,9 +150,10 @@ document.getElementById('skinny').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -128,9 +182,10 @@ document.getElementById('photojournalism').addEventListener('click', function() 
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -159,9 +214,10 @@ document.getElementById('anxiety').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -190,9 +246,10 @@ document.getElementById('gun-violence').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -221,9 +278,10 @@ document.getElementById('ai').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -252,9 +310,10 @@ document.getElementById('better-place').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -283,9 +342,10 @@ document.getElementById('weight-loss').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -314,9 +374,10 @@ document.getElementById('bullying').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -345,9 +406,10 @@ document.getElementById('mh-journalists').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
@@ -376,9 +438,12 @@ document.getElementById('mourning').addEventListener('click', function() {
     parent.querySelector('#articleTitle').innerText = myArticle.headline;
     parent.querySelector('#articleAuthor').innerText = myArticle.author_one;
     parent.querySelector('#articleDate').innerText = 'Monday, Nov. 27, 2023';
-    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);
+    parent.querySelector('#articleCardImage').setAttribute('src', 'images/' + myArticle.card_path);        
+parent.querySelector('#copy-link-input').setAttribute('value', window.location.href + '#' + myArticle.slug);
 
-    window.location.hash = myArticle.slug;
+    
 
     myModal.show();
 }, false);
+
+})();
